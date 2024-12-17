@@ -420,11 +420,16 @@ section .header .row {
     }
 
     h5 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     h5.capsule {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        padding: 8px 25px 8px 25px;
+    }
+
+    h5.capsule.orange {
+        padding-bottom: 12px;
     }
 
     .logo:hover {
@@ -447,7 +452,7 @@ section .header .row {
     }
 
     section.main img {
-        width: 100px;
+        width: 120px;
         rotate: 5deg;
         padding-bottom: 30px;
     }
