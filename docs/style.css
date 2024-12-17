@@ -92,6 +92,7 @@ h6 {
 
 h6.page-selector.overlay {
     font-size: 1.8rem;
+    padding: 12px 0 12px 0;
 }
 
 h6.page-selector.overlay.disabled {
