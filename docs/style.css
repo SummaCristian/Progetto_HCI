@@ -482,6 +482,7 @@ section .header .row {
 
     .button.paragraph {
         font-size: 1rem;
+        margin: 0;
     }
 
     .button.paragraph.team {
