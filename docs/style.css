@@ -555,6 +555,7 @@ section .header .row {
     }
 }
 
+/*
 @media screen and (max-width: 1225px) {
     h3.project.description {
         font-size: 1.1rem;
@@ -588,3 +589,4 @@ section .header .row {
         margin-top: 20px;
     }
 }
+*/
