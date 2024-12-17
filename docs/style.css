@@ -454,7 +454,6 @@ section .header .row {
 
     section.main img {
         width: 120px;
-        rotate: 5deg;
         padding-bottom: 30px;
     }
 
@@ -492,7 +491,7 @@ section .header .row {
 
     .button.paragraph {
         font-size: 1rem;
-        margin: 0;
+        margin-top: 10px;
     }
 
     .button.paragraph.team {
@@ -556,3 +555,36 @@ section .header .row {
     }
 }
 
+@media screen and (max-width: 1225px) {
+    h3.project.description {
+        font-size: 1.1rem;
+        padding: 20px 20px 0 0;
+    }
+
+    h4 {
+        font-size: 2.8rem;
+    }
+
+    h5 {
+        font-size: 3.5rem;
+    }
+
+    h5.capsule {
+        font-size: 2.2rem;
+        padding: 8px 25px 8px 25px;
+    }
+
+    section.main img {
+        width: 300px;
+    }
+
+    .scroll_section_box img {
+        height: 70%;
+        padding: 0;
+    }
+
+    .button.paragraph {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+}
