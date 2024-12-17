@@ -130,7 +130,7 @@ p {
     width: calc(100vw - 60px);
     line-height: 1.5rem;
     text-align: center;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     padding: 20px 28px 20px 28px;
@@ -545,6 +545,7 @@ section .header .row {
     }
 }
 
+/*
 @media screen and (min-width: 750px) {
     .nav-bigScreen {
         display: flex;
@@ -554,6 +555,7 @@ section .header .row {
         display: none;
     }
 }
+*/
 
 /*
 @media screen and (max-width: 1225px) {
