@@ -468,7 +468,7 @@ section .header .row {
     }
 
     .sticky_parent {
-        height: 1100vh;
+        height: 850vh;
     }
 
     .scroll_section {

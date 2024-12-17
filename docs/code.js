@@ -7,7 +7,7 @@ window.addEventListener('scroll', (e) => {
 })
 
 function transform() {
-    let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100 / (window.innerWidth <= 479 ? 2 : 4);
+    let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100 / (window.innerWidth <= 479 ? 1.5 : 4);
     percentage = percentage < 0 ? 0 : percentage > 500 ? 500 : percentage;
     for(let i = 0; i < scrollSections.length; i++) {
         scrollSections[i].style.transform = `translate3d(calc(100vw*${i} + ${-(percentage)}vw), 0, 0)`;
