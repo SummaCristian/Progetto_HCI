@@ -40,12 +40,14 @@ h2 {
 }
 
 h3 {
+    font-family: "ClashDisplay-Bold", sans-serif;
     width: 100%;
     font-size: 1.2rem;
     font-weight: 700;
 }
 
 h3.project.description {
+    font-family: "Urbanist", sans-serif;
     width: 100%;
     font-weight: 400;
     padding: 30px 20px 20px 0;
@@ -53,6 +55,7 @@ h3.project.description {
 }
 
 h4 {
+    font-family: "ClashDisplay-Medium", sans-serif;
     width: 100%;
     font-size: 4.5rem;
     font-weight: 500;
@@ -60,6 +63,7 @@ h4 {
 }
 
 h5 {
+    font-family: "ClashDisplay-Semibold", sans-serif;
     padding-right: 16px;
     margin-block-start: 0px;
     margin-block-end: 0px;
@@ -102,7 +106,7 @@ h6.page-selector.overlay.disabled {
 }
 
 p {
-    color: white;
+    font-family: "ClashDisplay-Medium", sans-serif;
 }
 
 .nav-bigScreen {
@@ -279,6 +283,7 @@ h3.page-selector.overlay {
 }
 
 .button.paragraph {
+    font-family: "Urbanist", sans-serif;
     font-size: 1.4rem;
     font-size: 400;
     color: white;
