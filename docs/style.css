@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Urbanist", sans-serif;
-    z-index: 0;
 
     --systemRed: #ff453a;
     --systemOrange: #ff9f0a;
@@ -30,8 +29,9 @@ h1 {
 }
 
 h1.section_title {
-    padding-top: calc(1.5rem + 100px);
-    padding-left: 60px;
+    position: relative;
+    padding: calc(1.5rem + 100px) 0 20px 60px;
+    z-index: 2;
 }
 
 h2 {
@@ -112,7 +112,7 @@ p {
 .nav-bigScreen {
     list-style: none;
     position: fixed;
-    width: fit-content;
+    width: max-content;
     line-height: 1.5rem;
     text-align: center;
     display: flex;
@@ -125,7 +125,7 @@ p {
     
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
+    z-index: 3;
 }
 
 .nav-smallScreen {
@@ -146,7 +146,7 @@ p {
     
     left: calc(50% - 30px);
     transform: translateX(-50%);
-    z-index: 2;
+    z-index: 3;
 }
 
 .nav-bigScreen li {
@@ -225,7 +225,7 @@ h3.page-selector.overlay {
 }
 
 .sticky_parent {
-    height: 2100vh;
+    height: 1470vh;
 }
 
 .sticky {
@@ -238,13 +238,14 @@ h3.page-selector.overlay {
 
 .scroll_section {
     position: absolute;
-    padding: 40px 20px 20px 20px;
+    padding: 20px 20px 40px 20px;
     width: 100%;
     height: calc(100vh - 1.5rem - 80px - 4rem - 40px);
     display: flex;
     align-items: center;
     justify-content: center;
     will-change: transform;
+    z-index: 1;
 }
 
 .scroll_section_box {
@@ -315,14 +316,14 @@ h3.page-selector.overlay {
 
 .section {
     position: absolute;
-    padding: 40px 20px 20px 20px;
+    padding: 20px 20px 40px 20px;
     width: 100%;
     height: calc(100vh - 1.5rem - 80px - 4rem - 40px);
     display: flex;
     align-items: center;
     justify-content: center;
-    will-change: transform;
-    z-index: 0;
+    /*will-change: transform;*/
+    z-index: 1;
 }
 
 section.main {
@@ -418,7 +419,7 @@ section .header .row {
 
     h3.project.description {
         font-size: 1rem;
-        padding: 10px 20px 0 0;
+        padding: 20px 20px 0 0;
     }
 
     h4 {
@@ -458,7 +459,7 @@ section .header .row {
     }
 
     section.main img {
-        width: 120px;
+        width: 200px;
         padding-bottom: 30px;
     }
 
@@ -469,14 +470,16 @@ section .header .row {
 
     .section {
         height: calc(100vh - 1.5rem - 80px - 2.3rem - 40px);
+        padding: 10px 20px 30px 20px;
     }
 
     .sticky_parent {
-        height: 850vh;
+        height: calc((100vh - 1.5rem - 80px - 2.3rem - 20px)*8.5);
     }
 
     .scroll_section {
         height: calc(100vh - 1.5rem - 80px - 2.3rem - 40px);
+        padding: 10px 20px 30px 20px;
     }
 
     .scroll_section_box {
@@ -496,7 +499,6 @@ section .header .row {
 
     .button.paragraph {
         font-size: 1rem;
-        margin-top: 10px;
     }
 
     .button.paragraph.team {
@@ -597,3 +599,9 @@ section .header .row {
     }
 }
 */
+
+@media screen and (max-height: 750px) {
+    .scroll_section_box.team {
+        overflow-y: scroll;
+    }
+}

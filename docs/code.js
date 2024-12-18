@@ -7,10 +7,17 @@ window.addEventListener('scroll', (e) => {
 })
 
 function transform() {
-    let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100 / (window.innerWidth <= 479 ? 1.5 : 4);
-    percentage = percentage < 0 ? 0 : percentage > 500 ? 500 : percentage;
-    for(let i = 0; i < scrollSections.length; i++) {
-        scrollSections[i].style.transform = `translate3d(calc(100vw*${i} + ${-(percentage)}vw), 0, 0)`;
+    let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100 / 1.5;
+    percentage = percentage < 0 ? 0 : percentage > (window.innerWidth > 479 ? 914 : 386) ? (window.innerWidth > 479 ? 914 : 386) : percentage;
+
+    if (window.innerWidth > 479) {
+        for(let i = 0; i < scrollSections.length; i++) {
+            scrollSections[i].style.transform = `translate3d(calc(100vw*${i} + ${-(percentage)}vh), 0, 0)`;
+        }
+    } else {
+        for(let i = 0; i < scrollSections.length; i++) {
+            scrollSections[i].style.transform = `translate3d(0, calc((100vh - 1.5rem - 80px - 4rem - 20px)*${i} + ${-(percentage)}vh), 0)`;
+        }
     }
 }
 
