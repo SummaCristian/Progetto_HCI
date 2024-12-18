@@ -8,7 +8,7 @@ window.addEventListener('scroll', (e) => {
 
 function transform() {
     let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100 / 1.5;
-    percentage = percentage < 0 ? 0 : percentage > (window.innerWidth > 479 ? 914 : 386) ? (window.innerWidth > 479 ? 914 : 386) : percentage;
+    percentage = percentage < 0 ? 0 : percentage > (window.innerWidth > 479 ? 914 : 370) ? (window.innerWidth > 479 ? 914 : 370) : percentage;
 
     if (window.innerWidth > 479) {
         for(let i = 0; i < scrollSections.length; i++) {

@@ -474,7 +474,7 @@ section .header .row {
     }
 
     .sticky_parent {
-        height: calc((100vh - 1.5rem - 80px - 2.3rem - 20px)*8.5);
+        height: calc((100vh - 1.5rem - 80px - 2.3rem - 20px)*8);
     }
 
     .scroll_section {
