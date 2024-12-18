@@ -459,7 +459,7 @@ section .header .row {
     }
 
     section.main img {
-        width: 200px;
+        width: 160px;
         padding-bottom: 30px;
     }
 
@@ -499,6 +499,7 @@ section .header .row {
 
     .button.paragraph {
         font-size: 1rem;
+        margin-top: 10px;
     }
 
     .button.paragraph.team {
