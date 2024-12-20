@@ -1,22 +1,22 @@
 const stickySection = document.querySelector('.sticky');
-const offsetTop = stickySection.parentElement.offsetTop;
 const scrollSections = stickySection.querySelectorAll('.scroll_section');
+const offsetTop = stickySection.parentElement.offsetTop;
 
 window.addEventListener('scroll', (e) => {
     transform(stickySection);
 })
 
 function transform() {
-    let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100 / 1.5;
-    percentage = percentage < 0 ? 0 : percentage > (window.innerWidth > 479 ? 914 : 370) ? (window.innerWidth > 479 ? 914 : 370) : percentage;
+    let sectionTitleHeigh = window.innerWidth > 479 ? 211 : 178;
+    var percentage = ((window.scrollY - offsetTop) / (795 - sectionTitleHeigh)) * 100;
+    percentage = percentage < 0 ? 0 : percentage > 500 ? 500 : percentage;
 
-    if (window.innerWidth > 479) {
-        for(let i = 0; i < scrollSections.length; i++) {
-            scrollSections[i].style.transform = `translate3d(calc(100vw*${i} + ${-(percentage)}vh), 0, 0)`;
-        }
-    } else {
-        for(let i = 0; i < scrollSections.length; i++) {
-            scrollSections[i].style.transform = `translate3d(0, calc((100vh - 1.5rem - 80px - 4rem - 20px)*${i} + ${-(percentage)}vh), 0)`;
+    for(let i = 0; i < scrollSections.length; i++) {
+        let percentageForSection = i == 0 ? 100 : (percentage - 100*(i) < -100 ? -100 : percentage - 100*(i) > 0 ? 0 : percentage - 100*(i)) + 100;
+        if (window.innerWidth > 479) {
+            scrollSections[i].style.transform = `translate3d(calc(100vw - ${percentageForSection}vw), calc((795px - ${sectionTitleHeigh}px)*${i} + (${-(percentage)} / 100)*(795px - ${sectionTitleHeigh}px)), 0)`;
+        } else {
+            scrollSections[i].style.transform = `translate3d(calc(100vw - ${percentageForSection}vw), calc((100vh - ${sectionTitleHeigh}px)*${i} + (${-(percentage)} / 100)*(100vh - ${sectionTitleHeigh}px)), 0)`;
         }
     }
 }
@@ -41,23 +41,3 @@ function toggleShowMenu(section) {
         x.classList.toggle("change");
     }
 }
-
-/* if window.maxWidth <= "479px" {
-    var d = document.querySelectorAll('.paragraph'), i, w, width, height;
-
-    for(i = 0; i < d.length; i++) {
-        width = d[i].offsetWidth;
-        height = d[i].offsetHeight;
-
-        for (w = width; w; w--) {
-            d[i].style.width = w + 'px';
-            if (d[i].offsetHeight !== height) break;
-        }
-    
-        if (w < d[i].scrollWidth) {
-            d[i].style.width = d[i].style.maxWidth = d[i].scrollWidth + 'px';
-        } else {
-            d[i].style.width = (w + 1) + 'px';
-        }
-    }
-} */

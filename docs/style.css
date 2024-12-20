@@ -30,7 +30,7 @@ h1 {
 
 h1.section_title {
     position: relative;
-    padding: calc(1.5rem + 100px) 0 20px 60px;
+    padding: calc(1.5rem + 100px) 0 10px 60px;
     z-index: 2;
 }
 
@@ -51,7 +51,7 @@ h3.project.description {
     width: 100%;
     font-weight: 400;
     padding: 30px 20px 20px 0;
-    color: var(--systemWhiteOpacity); /* #e5e5ea; */
+    color: var(--systemWhiteOpacity);
 }
 
 h4 {
@@ -69,6 +69,10 @@ h5 {
     margin-block-end: 0px;
     font-size: 5rem;
     font-weight: 400;
+}
+
+h5.e-text {
+    padding-left: 16px;
 }
 
 h5.capsule {
@@ -173,7 +177,6 @@ p {
 }
 
 .change .bar2 {
-    /*opacity: 0;*/
     width: 28px;
     transform: translate(0, -4.5px) rotate(45deg);
 }
@@ -181,11 +184,6 @@ p {
 .change .bar3 {
     transform: translate(0, -9px) rotate(45deg);
 }
-
-/*.bigScreen li a {
-    color: white;
-    display: flex;
-}*/
 
 .logo {
     color: var(--systemRed);
@@ -225,7 +223,7 @@ h3.page-selector.overlay {
 }
 
 .sticky_parent {
-    height: 1470vh;
+    height: calc(((795px - 211px)*6) + 211px);
 }
 
 .sticky {
@@ -233,14 +231,14 @@ h3.page-selector.overlay {
     position: sticky;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 795px;
 }
 
 .scroll_section {
     position: absolute;
-    padding: 20px 20px 40px 20px;
+    padding: 10px 20px 20px 20px;
     width: 100%;
-    height: calc(100vh - 1.5rem - 80px - 4rem - 40px);
+    height: calc(795px - 211px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -311,18 +309,17 @@ h3.page-selector.overlay {
     position: sticky;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 795px;
 }
 
 .section {
     position: absolute;
-    padding: 20px 20px 40px 20px;
+    padding: 10px 20px 0 20px;
     width: 100%;
-    height: calc(100vh - 1.5rem - 80px - 4rem - 40px);
+    height: calc(795px - 211px - 20px);
     display: flex;
     align-items: center;
     justify-content: center;
-    /*will-change: transform;*/
     z-index: 1;
 }
 
@@ -331,7 +328,7 @@ section.main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 795px;
     padding-bottom: 10px;
 }
 
@@ -344,7 +341,7 @@ section.main article {
 }
 
 section.main img {
-    width: 450px; /* calc(100vh - 1.5rem - 80px - 4rem - 200px) */
+    width: 450px;
     rotate: 5deg;
 }
 
@@ -404,16 +401,13 @@ section .header .row {
     padding: 0;
 }
 
-/* @media screen and (max-width: 991px) {
-
-} */
-
 @media screen and (max-width: 479px) {
     h1 {
         font-size: 2.3rem;
     }
 
     h1.section_title {
+        line-height: 44px;
         padding-left: 40px;
     }
 
@@ -428,6 +422,11 @@ section .header .row {
 
     h5 {
         font-size: 2.2rem;
+        padding-right: 8px;
+    }
+
+    h5.e-text {
+        padding-left: 8px;
     }
 
     h5.capsule {
@@ -468,18 +467,13 @@ section .header .row {
         padding: 0 0 10px 0;
     }
 
-    .section {
-        height: calc(100vh - 1.5rem - 80px - 2.3rem - 40px);
-        padding: 10px 20px 30px 20px;
-    }
-
     .sticky_parent {
-        height: calc((100vh - 1.5rem - 80px - 2.3rem - 20px)*8);
+        height: calc(((795px - 178px)*6) + 178px);
     }
 
     .scroll_section {
-        height: calc(100vh - 1.5rem - 80px - 2.3rem - 40px);
-        padding: 10px 20px 30px 20px;
+        height: calc(795px - 178px);
+        padding: 10px 20px 20px 20px;
     }
 
     .scroll_section_box {
@@ -505,27 +499,15 @@ section .header .row {
     .button.paragraph.team {
         font-size: 0.75rem;
     }
-
-    /*
-    #team {
-        height: 150vh;
+    
+    .section {
+        height: calc(795px - 178px - 20px);
+        padding: 10px 20px 0 20px;
     }
-
-    section #team {
-        height: calc(150vh - 1.5rem - 80px - 4rem - 40px);
-    }
-
-    section #team .scroll_section {
-        height: calc(150vh - 1.5rem - 80px - 4rem - 40px);
-    }
-
-    section #team .scroll_section_box {
-        height: calc(150vh - 1.5rem - 80px - 4rem - 40px);
-    }
-    */
 
     .grid-container {
         grid-template-columns: auto;
+        height: fit-content;
     }
 
     .grid-item {
@@ -550,59 +532,5 @@ section .header .row {
 
     .nav-smallScreen {
         display: flex;
-    }
-}
-
-/*
-@media screen and (min-width: 750px) {
-    .nav-bigScreen {
-        display: flex;
-    }
-
-    .nav-smallScreen {
-        display: none;
-    }
-}
-*/
-
-/*
-@media screen and (max-width: 1225px) {
-    h3.project.description {
-        font-size: 1.1rem;
-        padding: 20px 20px 0 0;
-    }
-
-    h4 {
-        font-size: 2.8rem;
-    }
-
-    h5 {
-        font-size: 3.5rem;
-    }
-
-    h5.capsule {
-        font-size: 2.2rem;
-        padding: 8px 25px 8px 25px;
-    }
-
-    section.main img {
-        width: 300px;
-    }
-
-    .scroll_section_box img {
-        height: 70%;
-        padding: 0;
-    }
-
-    .button.paragraph {
-        font-size: 1.2rem;
-        margin-top: 20px;
-    }
-}
-*/
-
-@media screen and (max-height: 750px) {
-    .scroll_section_box.team {
-        overflow-y: scroll;
     }
 }
