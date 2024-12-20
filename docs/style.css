@@ -30,6 +30,7 @@ h1 {
 
 h1.section_title {
     position: relative;
+    line-height: 77px;
     padding: calc(1.5rem + 100px) 0 10px 60px;
     z-index: 2;
 }
@@ -188,6 +189,8 @@ p {
 .logo {
     color: var(--systemRed);
     text-decoration: none;
+    rotate: 0deg;
+    transition: rotate 0.8s;
 }
 
 .logo:hover {
@@ -202,7 +205,6 @@ p {
 
 .page-selector:hover {
     text-decoration: underline;
-    transform: translateY(-2px);
 }
 
 .page-selector.disabled {
@@ -401,6 +403,154 @@ section .header .row {
     padding: 0;
 }
 
+@media screen and (max-width: 1350px) {
+    h4 {
+        font-size: 4rem;
+    }
+
+    .scroll_section_box img {
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .scroll_section_box.team {
+        display: block;
+        overflow-y: scroll;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto;
+        height: fit-content;
+    }
+
+    .grid-item.nothing {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h3.project.description {
+        font-size: 1.1rem;
+        padding: 20px 20px 10px 0;
+    }
+
+    h4 {
+        font-size: 3rem;
+    }
+
+    h5 {
+        font-size: 4rem;
+    }
+
+    h5.capsule {
+        font-size: 2.5rem;
+    }
+
+    .scroll_section_box img {
+        height: 60%;
+    }
+
+    section.main img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    h5 {
+        font-size: 3rem;
+    }
+
+    h5.capsule {
+        font-size: 2.2rem;
+    }
+
+    section.main img {
+        width: 300px;
+    }
+
+    .section {
+        height: calc(795px - 211px - 20px);
+        padding: 10px 20px 0 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3.project.description {
+        font-size: 1rem;
+        padding: 10px 20px 0 0;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+        padding-right: 20px;
+    }
+
+    .scroll_section_box {
+        display: inline;
+        justify-content: center;
+        padding-left: 25px;
+    }
+
+    .scroll_section_box img {
+        height: 35%;
+        padding: 20px 0 0 0;
+    }
+
+    .button.paragraph {
+        font-size: 1.2rem;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 2.7rem;
+    }
+
+    h5 {
+        font-size: 2.3rem;
+        padding-right: 12px;
+    }
+
+    h5.capsule {
+        font-size: 1.9rem;
+        padding: 10px 28px 10px 28px;
+    }
+
+    h5.capsule.orange {
+        padding-bottom: 12px;
+    }
+
+    h5.e-text {
+        padding-left: 12px;
+    }
+
+    .nav-bigScreen {
+        display: none;
+    }
+
+    .nav-smallScreen {
+        display: flex;
+    }
+
+    section.main img {
+        width: 250px;
+    }
+}
+
 @media screen and (max-width: 479px) {
     h1 {
         font-size: 2.3rem;
@@ -476,19 +626,9 @@ section .header .row {
         padding: 10px 20px 20px 20px;
     }
 
-    .scroll_section_box {
-        display: inline;
-        justify-content: center;
-        padding-left: 25px;
-    }
-
     .scroll_section_box img {
         height: 25%;
         padding: 20px 0 0 0;
-    }
-
-    .scroll_section_box.team {
-        overflow: scroll;
     }
 
     .button.paragraph {
@@ -499,15 +639,10 @@ section .header .row {
     .button.paragraph.team {
         font-size: 0.75rem;
     }
-    
+
     .section {
         height: calc(795px - 178px - 20px);
         padding: 10px 20px 0 20px;
-    }
-
-    .grid-container {
-        grid-template-columns: auto;
-        height: fit-content;
     }
 
     .grid-item {
@@ -522,15 +657,5 @@ section .header .row {
         width: 90px;
         height: auto;
         padding: 0;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .nav-bigScreen {
-        display: none;
-    }
-
-    .nav-smallScreen {
-        display: flex;
     }
 }
