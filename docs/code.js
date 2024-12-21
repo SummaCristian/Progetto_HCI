@@ -13,11 +13,7 @@ function transform() {
 
     for(let i = 0; i < scrollSections.length; i++) {
         let percentageForSection = i == 0 ? 100 : (percentage - 100*(i) < -100 ? -100 : percentage - 100*(i) > 0 ? 0 : percentage - 100*(i)) + 100;
-        if (window.innerWidth > 479) {
-            scrollSections[i].style.transform = `translate3d(calc(100vw - ${percentageForSection}vw), calc((795px - ${sectionTitleHeigh}px)*${i} + (${-(percentage)} / 100)*(795px - ${sectionTitleHeigh}px)), 0)`;
-        } else {
-            scrollSections[i].style.transform = `translate3d(calc(100vw - ${percentageForSection}vw), calc((795px - ${sectionTitleHeigh}px)*${i} + (${-(percentage)} / 100)*(795px - ${sectionTitleHeigh}px)), 0)`;
-        }
+        scrollSections[i].style.transform = `translate3d(calc(100vw - ${percentageForSection}vw), calc((795px - ${sectionTitleHeigh}px)*${i} + (${-(percentage)} / 100)*(795px - ${sectionTitleHeigh}px)), 0)`;
     }
 }
 
