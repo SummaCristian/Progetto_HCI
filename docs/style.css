@@ -104,7 +104,7 @@ h6.page-selector.overlay {
     padding: 12px 0 12px 0;
 }
 
-h6.page-selector.overlay.disabled {
+h6.page-selector.disabled.overlay {
     color: gray;
     pointer-events: none;
     cursor: default;
@@ -218,12 +218,6 @@ p {
     transform: none;
 }
 
-h3.page-selector.overlay {
-    font-size: 1.5rem;
-    color: white;
-    text-decoration: none;
-}
-
 .sticky_parent {
     height: calc(((795px - 211px)*6) + 211px);
 }
@@ -275,7 +269,7 @@ h3.page-selector.overlay {
 }
 
 .button.link {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .button.link.disabled {
@@ -550,6 +544,11 @@ section .header .row {
         padding-left: 12px;
     }
 
+    .page-selector:hover {
+        text-decoration: none;
+        transform: none;
+    }
+
     .nav-bigScreen {
         display: none;
     }
@@ -605,11 +604,6 @@ section .header .row {
         transform: none;
     }
 
-    .page-selector:hover {
-        text-decoration: none;
-        transform: none;
-    }
-
     section.main {
         justify-content: center;
     }
@@ -656,7 +650,7 @@ section .header .row {
         height: calc(795px - 178px - 20px);
         padding: 10px 20px 0 20px;
     }
-
+    
     .grid-item {
         font-size: 1.5rem;
     }
