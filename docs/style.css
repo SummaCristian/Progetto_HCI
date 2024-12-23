@@ -345,6 +345,18 @@ section.main article {
 section.main img {
     width: 450px;
     rotate: 5deg;
+    animation: levitate 4s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes levitate {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
 }
 
 .header {
