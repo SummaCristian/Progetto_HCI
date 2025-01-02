@@ -309,7 +309,7 @@ p {
 }
 
 .container.prototipe {
-    height: calc((795px * 2) - 211px - 20px);
+    height: calc((795px * 2) - 211px);
 }
 
 .section {
@@ -324,7 +324,7 @@ p {
 }
 
 .section.swift {
-    margin-top: calc(795px - 211px);
+    margin-top: calc(795px - 211px + 20px);
 }
 
 section.main {
@@ -655,7 +655,7 @@ section .header .row {
     }
 
     .container.prototipe {
-        height: calc((795px * 2) - 178px - 20px);
+        height: calc((795px * 2) - 178px);
     }
 
     .section {
@@ -664,7 +664,7 @@ section .header .row {
     }
 
     .section.swift {
-        margin-top: calc(795px - 178px);
+        margin-top: calc(795px - 178px + 20px);
     }
 
     .grid-item {
