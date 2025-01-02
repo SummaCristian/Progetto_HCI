@@ -309,12 +309,12 @@ p {
 }
 
 .container.prototipe {
-    height: calc((795px * 2) - 211px);
+    height: calc((795px * 2) - 211px - 20px);
 }
 
 .section {
     position: absolute;
-    padding: 10px 20px 0 20px;
+    padding: 10px 20px 20px 20px;
     width: 100%;
     height: calc(795px - 211px - 20px);
     display: flex;
@@ -487,11 +487,6 @@ section .header .row {
         width: 300px;
     }
 
-    .section {
-        height: calc(795px - 211px - 20px);
-        padding: 10px 20px 0 20px;
-    }
-
     .grid-container {
         grid-template-columns: auto;
     }
@@ -655,12 +650,11 @@ section .header .row {
     }
 
     .container.prototipe {
-        height: calc((795px * 2) - 178px);
+        height: calc((795px * 2) - 178px - 20px);
     }
 
     .section {
         height: calc(795px - 178px - 20px);
-        padding: 10px 20px 0 20px;
     }
 
     .section.swift {
