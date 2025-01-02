@@ -309,14 +309,14 @@ p {
 }
 
 .container.prototipe {
-    height: calc((795px * 2) - 211px - 20px);
+    height: calc((795px * 2) - 211px);
 }
 
 .section {
     position: absolute;
     padding: 10px 20px 20px 20px;
     width: 100%;
-    height: calc(795px - 211px - 20px);
+    height: calc(795px - 211px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -324,7 +324,7 @@ p {
 }
 
 .section.swift {
-    margin-top: calc(795px - 211px - 20px);
+    margin-top: calc(795px - 211px);
 }
 
 section.main {
@@ -650,15 +650,15 @@ section .header .row {
     }
 
     .container.prototipe {
-        height: calc((795px * 2) - 178px - 20px);
+        height: calc((795px * 2) - 178px);
     }
 
     .section {
-        height: calc(795px - 178px - 20px);
+        height: calc(795px - 178px);
     }
 
     .section.swift {
-        margin-top: calc(795px - 178px - 20px);
+        margin-top: calc(795px - 178px);
     }
 
     .grid-item {
