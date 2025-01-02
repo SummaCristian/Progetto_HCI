@@ -324,7 +324,7 @@ p {
 }
 
 .section.swift {
-    margin-top: calc(795px - 211px);
+    margin-top: calc(795px - 211px - 20px);
 }
 
 section.main {
@@ -664,7 +664,7 @@ section .header .row {
     }
 
     .section.swift {
-        margin-top: calc(795px - 178px);
+        margin-top: calc(795px - 178px - 20px);
     }
 
     .grid-item {
