@@ -308,6 +308,10 @@ p {
     height: 795px;
 }
 
+.container.prototipe {
+    height: calc((795px * 2) - 211px - 20px);
+}
+
 .section {
     position: absolute;
     padding: 10px 20px 0 20px;
@@ -317,6 +321,10 @@ p {
     align-items: center;
     justify-content: center;
     z-index: 1;
+}
+
+.section.swift {
+    margin-top: calc(795px - 211px);
 }
 
 section.main {
@@ -650,7 +658,7 @@ section .header .row {
         height: calc(795px - 178px - 20px);
         padding: 10px 20px 0 20px;
     }
-    
+
     .grid-item {
         font-size: 1.5rem;
     }
