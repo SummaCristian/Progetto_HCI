@@ -475,6 +475,11 @@ section .header .row {
         font-size: 2.5rem;
     }
 
+    .logo-box:hover {
+        text-decoration: none;
+        transform: none;
+    }
+
     .scroll_section_box img {
         height: 60%;
     }
@@ -610,11 +615,6 @@ section .header .row {
 
     h5.capsule.orange {
         padding-bottom: 12px;
-    }
-
-    .logo-box:hover {
-        text-decoration: none;
-        transform: none;
     }
 
     section.main {
