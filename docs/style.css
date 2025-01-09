@@ -186,7 +186,7 @@ p {
     transform: translate(0, -9px) rotate(45deg);
 }
 
-.logo-text {
+/*.logo-text {
     font-family: Nunito;
     font-weight: bolder;
     text-decoration: none;
@@ -202,14 +202,15 @@ p {
 
 .italic {
     font-style: italic;
-}
+} */
 
 /* Remove underline specifically for links inside logo */
-.logo a {
+/* .logo a {
     text-decoration: none;
-}
+} */
 
 .logo {
+    text-decoration: none;
     rotate: 0deg;
     transition: rotate 0.8s;
 }
