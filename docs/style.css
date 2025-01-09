@@ -189,7 +189,7 @@ p {
 .logo-text {
     font-family: Nunito;
     font-weight: bolder;
-    text-decorations: none;
+    text-decoration: none;
 }
 
 .text-white {
@@ -207,6 +207,11 @@ p {
 /* Remove underline specifically for links inside logo */
 .logo a {
     text-decoration: none;
+}
+
+.logo {
+    rotate: 0deg;
+    transition: rotate 0.8s;
 }
 
 .logo:hover {
