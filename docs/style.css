@@ -204,6 +204,10 @@ h3.logo.text {
     font-family: "Nunito", sans-serif;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .page-selector {
     color: white;
     text-decoration: none;
