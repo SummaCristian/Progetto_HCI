@@ -612,7 +612,7 @@ section .header .row {
         padding-bottom: 12px;
     }
 
-    .logo:hover {
+    .logo-box:hover {
         text-decoration: none;
         transform: none;
     }
