@@ -14,6 +14,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="clash-display.css">
         <meta charset="UTF-8">
@@ -31,9 +32,9 @@
             </div>
 
             <nav class="nav-bigScreen">
-                <li>
-                    <a href="#main" class="logo">
-                        <img width="110" height="30" src="imgs/big_logo.png" alt="Time2Help Logo" class="logo-image">
+                <li class="logo-box">
+                    <a href="#main" class="logo" style="display: flex;">
+                        <h3 class="logo text" style="color: white;">Time</h3><h3 class="logo text" style="color: #34c759;">2</h3><h3 class="logo text" style="color: white;">Help</h3>
                     </a>
                 </li>
                 <li onclick="returnToBegin()"><a href="#project" class="page-selector"><h6>Fasi del Progetto</h6></a></li>
@@ -43,9 +44,9 @@
             </nav>
 
             <nav class="nav-smallScreen">
-                <li class="logo-link">
-                    <a href="#main" class="logo">
-                        <img width="110" height="30" src="imgs/big_logo.png" alt="Time2Help Logo" class="logo-image">
+                <li class="logo-box" onclick="toggleShowMenu(this)">
+                    <a href="#main" class="logo" style="display: flex;">
+                        <h3 class="logo text" style="color: white;">Time</h3><h3 class="logo text" style="color: #34c759;">2</h3><h3 class="logo text" style="color: white;">Help</h3>
                     </a>
                 </li>
                 <div style="width: 100%;"></div>

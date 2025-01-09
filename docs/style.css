@@ -186,38 +186,22 @@ p {
     transform: translate(0, -9px) rotate(45deg);
 }
 
-/*.logo-text {
-    font-family: Nunito;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-.text-white {
-    color: white;
-}
-
-.text-green {
-    color: green;
-}
-
-.italic {
-    font-style: italic;
-} */
-
-/* Remove underline specifically for links inside logo */
-/* .logo a {
-    text-decoration: none;
-} */
-
 .logo {
     text-decoration: none;
+}
+
+.logo-box {
     rotate: 0deg;
     transition: rotate 0.8s;
 }
 
-.logo:hover {
+.logo-box:hover {
     scale: 1.1;
     rotate: 2deg;
+}
+
+h3.logo.text {
+    font-family: "Nunito", sans-serif;
 }
 
 .page-selector {
