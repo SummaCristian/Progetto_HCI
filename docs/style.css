@@ -186,11 +186,27 @@ p {
     transform: translate(0, -9px) rotate(45deg);
 }
 
-.logo {
-    color: var(--systemRed);
+.logo-text {
+    font-family: Nunito;
+    font-weight: bolder;
+    text-decorations: none;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-green {
+    color: green;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Remove underline specifically for links inside logo */
+.logo a {
     text-decoration: none;
-    rotate: 0deg;
-    transition: rotate 0.8s;
 }
 
 .logo:hover {
