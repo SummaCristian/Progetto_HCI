@@ -126,45 +126,81 @@ Abbiamo completato il Prototipo in seguito ai risultati della Valutazione Eurist
 ### Nome del gruppo
 Questo progetto è stato realizzato dal gruppo <b><i>Imagineers</i></b>.
 ### Componenti
-<table>
+<table style="width: 100%; border-collapse: collapse;">
   <tr>
-    <td style="text-align: center; height: 150px; width: 150px; vertical-align: middle; white-space: nowrap;">
-      <img src="https://github.com/mattiaDina.png" width="100" style="border-radius: 50%;"><br>
-      <b><a href="https://github.com/mattiaDina">mattiaDina</a></b><br>
+    <td style="text-align: center; padding: 10px;">
+      <img src="https://github.com/mattiaDina.png" width="100" style="border-radius: 50%;">
+    </td>
+    <td style="text-align: center; padding: 10px;">
+      <b><a href="https://github.com/mattiaDina" style="text-decoration: none; color: black;">mattiaDina</a></b>
+    </td>
+    <td style="text-align: center; padding: 10px;">
       Mattia Di Nardo
     </td>
-    <td style="text-align: center; height: 150px; width: 150px; vertical-align: middle; white-space: nowrap;">
-      <img src="https://github.com/Mailp99.png" width="100" style="border-radius: 50%;"><br>
-      <b><a href="https://github.com/Mailp99">Mailp99</a></b><br>
+  </tr>
+  <tr>
+    <td style="text-align: center; padding: 10px;">
+      <img src="https://github.com/Mailp99.png" width="100" style="border-radius: 50%;">
+    </td>
+    <td style="text-align: center; padding: 10px;">
+      <b><a href="https://github.com/Mailp99" style="text-decoration: none; color: black;">Mailp99</a></b>
+    </td>
+    <td style="text-align: center; padding: 10px;">
       Mathias Rodigari
     </td>
-    <td style="text-align: center; height: 150px; width: 150px; vertical-align: middle; white-space: nowrap;">
-      <img src="https://github.com/RaffaeleRossi101102.png" width="100" style="border-radius: 50%;"><br>
-      <b><a href="https://github.com/RaffaeleRossi101102">RaffaeleRossi101102</a></b><br>
+  </tr>
+  <tr>
+    <td style="text-align: center; padding: 10px;">
+      <img src="https://github.com/RaffaeleRossi101102.png" width="100" style="border-radius: 50%;">
+    </td>
+    <td style="text-align: center; padding: 10px;">
+      <b><a href="https://github.com/RaffaeleRossi101102" style="text-decoration: none; color: black;">RaffaeleRossi101102</a></b>
+    </td>
+    <td style="text-align: center; padding: 10px;">
       Raffaele Rossi
     </td>
   </tr>
   <tr>
-    <td style="text-align: center; height: 150px; width: 150px; vertical-align: middle; white-space: nowrap;">
-      <img src="https://github.com/ilaria-18.png" width="100" style="border-radius: 50%;"><br>
-      <b><a href="https://github.com/ilaria-18">ilaria-18</a></b><br>
+    <td style="text-align: center; padding: 10px;">
+      <img src="https://github.com/ilaria-18.png" width="100" style="border-radius: 50%;">
+    </td>
+    <td style="text-align: center; padding: 10px;">
+      <b><a href="https://github.com/ilaria-18" style="text-decoration: none; color: black;">ilaria-18</a></b>
+    </td>
+    <td style="text-align: center; padding: 10px;">
       Ilaria Sala
     </td>
-    <td style="text-align: center; height: 150px; width: 150px; vertical-align: middle; white-space: nowrap;">
-      <img src="https://github.com/SummaCristian.png" width="100" style="border-radius: 50%;"><br>
-      <b><a href="https://github.com/SummaCristian">SummaCristian</a></b><br>
+  </tr>
+  <tr>
+    <td style="text-align: center; padding: 10px;">
+      <img src="https://github.com/SummaCristian.png" width="100" style="border-radius: 50%;">
+    </td>
+    <td style="text-align: center; padding: 10px;">
+      <b><a href="https://github.com/SummaCristian" style="text-decoration: none; color: black;">SummaCristian</a></b>
+    </td>
+    <td style="text-align: center; padding: 10px;">
       Cristian Summa
     </td>
-    <td style="text-align: center; height: 150px; width: 150px; vertical-align: middle; white-space: nowrap;">
-      <img src="https://github.com/Bea315.png" width="100" style="border-radius: 50%;"><br>
-      <b><a href="https://github.com/Bea315">Bea315</a></b><br>
+  </tr>
+  <tr>
+    <td style="text-align: center; padding: 10px;">
+      <img src="https://github.com/Bea315.png" width="100" style="border-radius: 50%;">
+    </td>
+    <td style="text-align: center; padding: 10px;">
+      <b><a href="https://github.com/Bea315" style="text-decoration: none; color: black;">Bea315</a></b>
+    </td>
+    <td style="text-align: center; padding: 10px;">
       Beatrice Tenti
     </td>
   </tr>
   <tr>
-    <td colspan="3" style="text-align: center; height: 150px; width: 150px; vertical-align: middle; white-space: nowrap;">
-      <img src="https://github.com/gaiavizza.png" width="100" style="border-radius: 50%;"><br>
-      <b><a href="https://github.com/gaiavizza">gaiavizza</a></b><br>
+    <td style="text-align: center; padding: 10px;">
+      <img src="https://github.com/gaiavizza.png" width="100" style="border-radius: 50%;">
+    </td>
+    <td style="text-align: center; padding: 10px;">
+      <b><a href="https://github.com/gaiavizza" style="text-decoration: none; color: black;">gaiavizza</a></b>
+    </td>
+    <td style="text-align: center; padding: 10px;">
       Gaia Vizza
     </td>
   </tr>
