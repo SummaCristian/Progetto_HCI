@@ -702,16 +702,10 @@ section .header .row {
 }
 
 .gridScreenshot {
-    width: 100%;
+    width: 80%;
     height: auto;
-    object-fit: contain;
+    object-fit: scale-down;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
-
-@media (max-width: 600px) {
-    .grid-container-screenshots {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 0px 12px;
-    }
-}
-
-
