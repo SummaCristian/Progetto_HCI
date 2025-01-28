@@ -322,6 +322,10 @@ h3.logo.text {
     height: calc((795px * 2) - 211px);
 }
 
+.container.screenshots {
+    height: 700px;
+}
+
 .section {
     position: absolute;
     padding: 10px 20px 20px 20px;
@@ -685,3 +689,29 @@ section .header .row {
         padding: 0;
     }
 }
+
+.grid-container-screenshots {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    gap: 0px 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.gridScreenshot {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .grid-container-screenshots {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 0px 12px;
+    }
+}
+
+
