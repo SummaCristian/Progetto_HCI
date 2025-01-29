@@ -719,8 +719,10 @@ section .header .row {
     transition: transform 0.3s ease-in-out;
 }
 
-.gridScreenshot:hover {
-    transform: scale(1.2); /* Scales the image to 1.2 times its size */
+@media (min-width: 768px) {
+    .gridScreenshot:hover {
+        transform: scale(1.2); /* Scale the image to 1.2 times its original size */
+    }
 }
 
 /* For Webkit and Chromium browsers (Chrome, Edge, etc.) */
